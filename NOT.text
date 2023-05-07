@@ -21,3 +21,6 @@ ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
  ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world
  
  
+ TO CONTROL 
+ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+ 
