@@ -1,2 +1,8 @@
-TO PUSH MY WOKE
+TO PUSH MY WORKE
 
+TO PUSH MY WORKE
+cd src/my_bot/
+git status
+git add .
+git status
+git commit -m"-------"
