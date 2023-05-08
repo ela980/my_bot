@@ -6,8 +6,21 @@ git status
 git add .
 git status
 git commit -m"-------"
+git push
 
 
+
+1 terminal
+cd dev_ws
+colcon build --symlink-install
+
+2 terminal
+source install/setup.bash
+ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world
+
+3 terminal
+ TO CONTROL 
+ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 TO RUN
 ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
@@ -21,6 +34,7 @@ ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
  ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world
  
  
- TO CONTROL 
- ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+
+
  
