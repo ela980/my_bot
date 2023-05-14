@@ -34,6 +34,21 @@ ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
  ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world
  
  
+ _______
+ cd dev_ws
+colcon build --symlink-install
+ 
+ source install/setup.bash
+ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world
+
+17 video في كود مشان استدعاء ل 
+rviz2 -p main----وهيك شغلات
+
+ ros2 launch slam_toolbox online_async_launch.py params_file:=./src/my_bot/config/mapper_params_online_async.yaml use_sim_time:=true
+
+
+ 
+ 
 
 
 
